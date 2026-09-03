@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project: trained Q-learning artifacts
+# The Q-table is a training output, not source. It is a large binary that
+# changes on every run, so git cannot diff it and history would bloat fast.
+# Retrain with qlearning_agent.py to regenerate it.
+q_table.pkl
+*.pkl
